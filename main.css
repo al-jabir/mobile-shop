@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  height: 60px;
+  background: gray;
+  position: fixed;
+  width: 100%;
+  box-shadow: 0 5px 10px rgba(192, 179, 179, 0.507);
+}
+.logo {
+  font-size: 30px;
+  text-transform: uppercase;
+  color: tomato;
+  font-weight: 500;
+}
+ul {
+  display: flex;
+}
+ul li {
+  list-style: none;
+  margin: 0 10px;
+}
+ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 5px 10px;
+  transition: 0.5s;
+}
+ul li a:hover {
+  background: black;
+}
+.cta {
+  text-decoration: none;
+  font-size: 30px;
+  text-transform: uppercase;
+  color: purple;
+}
+#home {
+  height: 100vh;
+  background: url(./img/home.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.content {
+  padding: 100px 0;
+}
+.content .text {
+  margin-top: 16%;
+  margin-left: 10%;
+  max-width: 500px;
+}
+.content .text h1 {
+  font-size: 40px;
+  color: #fff;
+  margin-bottom: 50px;
+}
+.content .text p {
+  font-size: 20px;
+  color: #fff;
+}
+
+#samsung {
+  padding: 100px 0;
+  width: 100%;
+}
+.title {
+  text-align: center;
+  text-transform: uppercase;
+  color: tomato;
+  font-size: 50px;
+  margin-bottom: 40px;
+}
+.samsung {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.samsung .card {
+  margin: 10px auto;
+  width: 350px;
+}
+.samsung .card img {
+  width: 100%;
+}
+.samsung .card .s-text {
+  padding: 10px;
+}
+.samsung .card .s-text h3 {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 30px;
+}
+.samsung .card .s-text p {
+  padding: 20px 0;
+  text-align: justify;
+}
+.learn {
+  display: block;
+  height: 50px;
+  width: 150px;
+  background: tomato;
+  text-align: center;
+  line-height: 50px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 10px;
+  transition: all 0.5s;
+}
+.learn:hover {
+  background: transparent;
+  color: black;
+  border: 2px solid tomato;
+}
+.oneplus {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 0 auto;
+}
+.oneplus .card {
+  border: 2px solid tan;
+  margin: 10px auto;
+  width: 500px;
+}
+.oneplus .card img {
+  height: 600px;
+  width: 100%;
+}
+.oneplus .card .o-text {
+  padding: 20px;
+  text-align: center;
+}
+.oneplus .card .o-text h3 {
+  padding: 20px 0;
+  color: tomato;
+}
+.oneplus .card .o-text p {
+  margin: 20px 0;
+}
+.post {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+.post .f {
+  margin: 10px auto;
+  width: 400px;
+}
+.left img {
+  width: 100%;
+}
+.post .right h1 {
+  padding: 20px 0;
+  font-size: 40px;
+  color: tomato;
+}
+footer {
+  height: 10vh;
+  background: purple;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer p {
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #fff;
+}
+@media only screen and (max-width: 480px) {
+  header {
+    display: none;
+  }
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  .content .text h1 {
+    font-size: 30px;
+  }
+}
